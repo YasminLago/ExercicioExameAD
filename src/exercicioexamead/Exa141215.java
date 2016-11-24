@@ -178,7 +178,8 @@ public class Exa141215 {
             PreparedStatement st = conexion.prepareStatement("SELECT * FROM clientes");
             ResultSet rs = st.executeQuery();
             while (rs.next()) {
-                System.out.println("CodigoC: " + rs.getString(1)
+                System.out.println("Taboa CLIENTES:\n"
+                        + "CodigoC: " + rs.getString(1)
                         + ", NomeC: " + rs.getString(2)
                         + ", DIRec: " + rs.getString(3)
                         + ", NomeC: " + rs.getInt(4));
@@ -190,7 +191,8 @@ public class Exa141215 {
             PreparedStatement st = conexion.prepareStatement("SELECT * FROM produtos");
             ResultSet rs = st.executeQuery();
             while (rs.next()) {
-                System.out.println("CodigoP: " + rs.getString(1)
+                System.out.println("Taboa PRODUTOS:\n"
+                        + "CodigoP: " + rs.getString(1)
                         + ", NomeP: " + rs.getString(2)
                         + ", Prezo: " + rs.getInt(3)
                         + ", Stock: " + rs.getInt(4));
@@ -202,7 +204,8 @@ public class Exa141215 {
             PreparedStatement st = conexion.prepareStatement("SELECT * FROM vendas");
             ResultSet rs = st.executeQuery();
             while (rs.next()) {
-                System.out.println("CodigoC: " + rs.getString(1)
+                System.out.println("Taboa VENDAS:\n"
+                        + "CodigoC: " + rs.getString(1)
                         + ", CodigoP: " + rs.getString(2)
                         + ", Data: " + rs.getString(3)
                         + ", Total: " + rs.getInt(4));
